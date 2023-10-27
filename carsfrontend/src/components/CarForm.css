@@ -1,0 +1,35 @@
+/*editing the container*/
+.container{
+    background: linear-gradient(to bottom, rgb(116, 5, 73),  rgb(233, 88, 112));
+    padding: 25px;
+}
+
+/*editing the form container*/
+.form{
+    margin-top: 20px;
+    margin-left: 35rem;
+}
+
+/*editing the input fields*/
+input{
+    display: block;
+    margin-block-end: 11px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 11px;
+    width: 25%;
+}
+
+.formbtn{
+    height: 15%;
+    width: 10%;
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.formbtn:hover{
+    background-color: lightskyblue;
+}

@@ -1,0 +1,57 @@
+/*editing the LIST component*/
+.list{
+    background: linear-gradient(to bottom, rgb(233, 88, 112), rgb(201, 110, 125), rgb(211, 146, 108));
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.list-heading{
+    text-align: center;
+    color: white;
+}
+
+.all-cars{
+    list-style-type: none;
+    margin-left: 30rem;
+    padding: 25px;
+    margin-bottom: 8px;
+}
+
+.cars-details{
+    margin-bottom: 8px;
+    color: yellow;
+}
+
+.update-btn{
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    margin-inline-end: 6px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn{
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.oldcars-heading{
+    text-align: center;
+    color: white;
+}
+
+.oldcars-list{
+    list-style-type: none;
+}
+
+.oldcars-details{
+    text-align: center;
+    color: white;
+}

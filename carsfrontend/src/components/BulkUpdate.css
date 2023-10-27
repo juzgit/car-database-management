@@ -1,0 +1,34 @@
+/*editing the BULK update UI*/
+.bulk-update{
+    background: linear-gradient(to bottom, rgb(211, 146, 108), rgb(240, 240, 60));
+    padding: 15px;
+}
+
+.bulk-update-heading{
+    text-align: center;
+    color: white;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7px;
+}
+
+.bulk-p{
+    color: purple;
+}
+
+.bulk-input{
+    margin-left: 10rem;
+}
+
+.bulk-update-btn{
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 8rem;
+}
