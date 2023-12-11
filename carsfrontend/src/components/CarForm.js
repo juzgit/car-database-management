@@ -23,7 +23,7 @@ const CarForm = () => {
     const Submit = async (e) => {
         e.preventDefault();
         try{
-            const response = await fetch('/cars/add', {
+            const response = await fetch('https://car-database-api.onrender.com/cars/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

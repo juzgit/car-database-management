@@ -16,7 +16,7 @@ const BulkUpdate = () => {
 
     const Update = async () => {
         try{
-            const response = await fetch('/cars/bulkUpdate', { //send a PUT request to the server to update the selected cars
+            const response = await fetch('https://car-database-api.onrender.com/cars/bulkUpdate', { //send a PUT request to the server to update the selected cars
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const BulkUpdate = () => {
         const fetchCars = async () => {
             try{
                 //fetch the list of cars from the server
-                const response = await fetch('/cars/list');
+                const response = await fetch('https://car-database-api.onrender.com/cars/list');
                 const data = await response.json();
                 //update the cars state with the fetched data
                 setCars(data);

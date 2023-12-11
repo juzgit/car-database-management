@@ -11,7 +11,7 @@ const CarList = () => {
         //fetchCars function is responsible for making an asynchronous request to the server to fetch the list of cars.
         const fetchCars = async () => {
             try{
-                const response = await fetch('/cars/list');
+                const response = await fetch('https://car-database-api.onrender.com/cars/list');
                 const data = await response.json();
                 setCars(data);
             }catch(error){
@@ -25,7 +25,7 @@ const CarList = () => {
     useEffect(() => {
         const fetchOldCars = async () => {
             try{
-                const response = await fetch('/cars/olderthan5years');
+                const response = await fetch('https://car-database-api.onrender.com/cars/olderthan5years');
                 const data = await response.json();
                 setOldCars(data);
             }catch(error){
@@ -40,7 +40,7 @@ const CarList = () => {
     const Update = async (carId) => {
         try{
             //makes a PUT request to the /cars/update/${carId} endpoint with the updated car data.
-            const response = await fetch(`cars/update/${carId}`, {
+            const response = await fetch(`https://car-database-api.onrender.com/cars/update/${carId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ const CarList = () => {
     //makes a DELETE request to the /cars/delete/${carId} endpoint.
     const Delete = async (carId) => {
         try{
-            const response = await fetch(`/cars/delete/${carId}`, {
+            const response = await fetch(`https://car-database-api.onrender.com/cars/delete/${carId}`, {
                 method: 'DELETE'
             });
 
